@@ -1,0 +1,15 @@
+version 2.0
+
+phases:
+  install:
+    commands:
+      - echo executing install phase
+  pre_build:
+    commands:
+      - echo executing pre build phase
+  build:
+    commands:
+      - echo executing build phase
+  post_build:
+    commands:
+      - echo executing post build phase
