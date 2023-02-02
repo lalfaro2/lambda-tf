@@ -14,9 +14,11 @@ phases:
   pre_build:
     commands:
       - echo executing pre build phase
+      - terraform init
   build:
     commands:
       - echo executing build phase
+      - terraform apply --auto-approve
   post_build:
     commands:
       - echo executing post build phase
