@@ -15,6 +15,7 @@ phases:
     commands:
       - echo executing pre build phase
       - terraform init
+      - terraform destroy --auto-approve
   build:
     commands:
       - echo executing build phase
